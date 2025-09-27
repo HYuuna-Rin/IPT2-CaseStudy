@@ -9,7 +9,9 @@ body {
   line-height: 1.6;
   background: linear-gradient(135deg, #f9f9fb, #eef2f7);
   color: #333;
-  padding-bottom: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -20,7 +22,7 @@ header {
   border-bottom: 4px solid #005a99;
 }
 
-header h1, header h2 {
+header h1 {
   margin-bottom: 10px;
 }
 
@@ -102,10 +104,8 @@ footer {
   color: #fff;
   padding: 15px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   font-size: 0.9em;
+  margin-top: auto;
 }
 
 footer a {
@@ -192,5 +192,21 @@ footer a:hover {
 .member-card a {
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+  }
+}
