@@ -146,3 +146,100 @@ footer a:hover {
   font-size: 1.1em;
 }
 
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 1200px;
+
+  background: linear-gradient(135deg, #f0f7ff, #ffffff);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.team::before,
+.team::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.team::before {
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 122, 204, 0.08);
+  top: -100px;
+  left: -120px;
+}
+
+.team::after {
+  width: 250px;
+  height: 250px;
+  background: rgba(0, 90, 153, 0.06);
+  bottom: -100px;
+  right: -100px;
+}
+
+.member-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 220px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #007acc;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.member-card h2 {
+  font-size: 1.1em;
+  margin: 10px 0 5px;
+  color: #007acc;
+}
+
+.member-card p {
+  font-size: 0.95em;
+  color: #555;
+  margin: 0;
+}
+
+.member-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
