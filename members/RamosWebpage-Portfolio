@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Del Rosario - Portfolio</title>
+    <title>Ramos - Portfolio</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header class="profile-header">
-    <img src="../images/DelrosarioPic.jpg" alt="Profile Picture" class="profile-pic">
+    <img src="../images/ramos_img.jpg" alt="Profile Picture" class="profile-pic">
     <div class="profile-info">
-    <h1>Joeshua Jhowne P. Del Rosario</h1>
+    <h1>Catherine T. Ramos</h1>
     <p><strong>Role:</strong> Web Developer | Team Member</p>
   </header>
 
   <section>
     <h2>Contact Information</h2>
     <ul>
-      <li><strong>Email:</strong> jhowne.delrosario@gmail.com</li>
-      <li><strong>Phone:</strong> 0909-465-7638</li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/HYuuna-Rin" target="_blank">HYuuna-Rin</a></li>
+      <li><strong>Email:</strong> ramoscath12@@gmail.com</li>
+      <li><strong>Phone:</strong> 0936-569-2493</li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/katerinnnn" target="_blank">katerinnnn</a></li>
     </ul>
   </section>
 
   <section>
     <h2>Profile Summary</h2>
     <p>
-      A highly motivated and detail-oriented developer with knowledge of
-      front-end technologies and experience in collaborative projects. Passionate about
-      building user-friendly websites and learning new technologies.
+      Motivated and adaptable Hospitality Management student with a passion for customer service and teamwork.
+        Skilled in basic front-end web development (HTML/CSS) and experienced in using Git and GitHub for collaboration. 
+        Eager to learn new technologies and apply creativity in both academic and professional projects. 
+        Enthusiastic about building strong relationships and delivering quality results.
+
     </p>
   </section>
 
@@ -36,19 +38,18 @@
     <h2>Education</h2>
     <ul>
       <li><strong>Bachelor of Science in Information Technology</strong>, Tarlac State University (2020–2026)</li>
-      <li><strong>Senior High School</strong>, Golden Olympus Colleges, Inc. (2018–2020)</li>
-      <li><strong>Junior High School</strong>, Our Lady of Ransom, Catholic School (2014–2018)</li>
-      <li><strong>Elementary School</strong>, Sto. Cristo Intergrated School (2008–2014)</li>
+      <li><strong>Senior High School</strong>, Capas National High School(2018–2020)</li>
+      <li><strong>Junior High School</strong>, Capas National High School (2014–2018)</li>
+      <li><strong>Elementary School</strong>, Kabisig Elementary School (2008–2014)</li>
     </ul>
   </section>
 
   <section>
     <h2>Skills</h2>
     <ul class="skills">
-      <li>HTML, CSS3</li>
+      <li>HTML, CSS</li>
       <li>Git & GitHub</li>
       <li>Responsive Web Design</li>
-      <li>Team Collaboration</li>
       <li>Fast Learner</li>
     </ul>
   </section>
@@ -69,7 +70,7 @@
   <section>
     <h2>Projects</h2>
     <ul>
-      <li><strong>Team Portfolio Website:</strong> Group project to showcase team members’ resumes in a static website.</li>
+      <li><strong>Team Portfolio Website:</strong> Group project to showcase team members’ resumes in a static website.</li
     </ul>
   </section>
 
@@ -86,4 +87,3 @@
   </footer>
 </body>
 </html>
-
