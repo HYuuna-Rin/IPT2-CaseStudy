@@ -24,7 +24,7 @@
   <!-- Home Section -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <img src="ramos_img.jpg" alt="Profile Picture" class="profile-img">
+      <img src="../images/ramos_img.jpg" alt="Profile Picture" class="profile-img">
       <h1>Hello, I'm Catherine Ramos 🌸</h1>
       <p>Blooming ideas and creativity like tulips in spring 🌷</p>
       <a href="#projects" class="btn">See My Work</a>
