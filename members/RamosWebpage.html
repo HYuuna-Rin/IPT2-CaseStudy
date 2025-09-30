@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramos - Portfolio</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catherine's Portfolio</title>
+  <link rel="stylesheet" href="tulip.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="profile-header">
-    <img src="../images/ramos_img.jpg" alt="Profile Picture" class="profile-pic">
-    <div class="profile-info">
-    <h1>Catherine T. Ramos</h1>
-    <p><strong>Role:</strong> Web Developer | Team Member</p>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌷 Catherine</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    <h2>Contact Information</h2>
-    <ul>
-      <li><strong>Email:</strong> ramoscath12@@gmail.com</li>
-      <li><strong>Phone:</strong> 0936-569-2493</li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/katerinnnn" target="_blank">katerinnnn</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Profile Summary</h2>
-    <p>
-      Motivated and adaptable Hospitality Management student with a passion for customer service and teamwork.
-        Skilled in basic front-end web development (HTML/CSS) and experienced in using Git and GitHub for collaboration. 
-        Eager to learn new technologies and apply creativity in both academic and professional projects. 
-        Enthusiastic about building strong relationships and delivering quality results.
-
-    </p>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Bachelor of Science in Information Technology</strong>, Tarlac State University (2020–2026)</li>
-      <li><strong>Senior High School</strong>, Capas National High School(2018–2020)</li>
-      <li><strong>Junior High School</strong>, Capas National High School (2014–2018)</li>
-      <li><strong>Elementary School</strong>, Kabisig Elementary School (2008–2014)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>HTML, CSS</li>
-      <li>Git & GitHub</li>
-      <li>Responsive Web Design</li>
-      <li>Fast Learner</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>------
-      <p><em>------</em></p>
-      <ul>
-        <li>------</li>
-        <li>------</li>
-        <li>------</li>
-      </ul>
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="ramos_img.jpg" alt="Profile Picture" class="profile-img">
+      <h1>Hello, I'm Catherine Ramos 🌸</h1>
+      <p>Blooming ideas and creativity like tulips in spring 🌷</p>
+      <a href="#projects" class="btn">See My Work</a>
     </div>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Team Portfolio Website:</strong> Group project to showcase team members’ resumes in a static website.</li
-    </ul>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Catherine Ramos, a 4th year Bachelor of Science in Computer Studues student at 
+      <strong>Tarlac State University</strong>. I have a deep passion for creativity, leadership, and innovation.  
+    </p>
+    <div class="about-details">
+      <div class="about-box">
+        <h3>🎓 Education</h3>
+        <p><strong>Tarlac State University</strong><br>BS Computer Science (2022 – Present)</p>
+        <p><strong>Capas National High School</strong><br>Junior High - Senior High(2016 – 2022)</p>
+        <p><strong>Kabisig Elementary School</strong><br>Elementary (2010 – 2016)</p>
+      </div>
+      <div class="about-box">
+        <h3>🏫 Organizations</h3>
+        <ul>
+          <li>Auditor, Student Society of Information Technology Education (2025-2026)</li>
+          <li>BOD, College Student Council (2022-2025)</li>
+          <li>EA in Treasurer, Student Society of Information Technology Education (2024-2025)</li>
+          <li>Member, Programmer's Den(2024-2025)</li>
+        </ul>
+      </div>
+      <div class="about-box">
+        <h3>🏆 Achievements</h3>
+        <ul>
+          <li>Dean’s Lister – 1st year (2nd Semester)</li>
+          <li>Dean’s Lister – 2nd year (2nd Semester)</li>
+          <li>Dean’s Lister – 3rd year (2nd Semester)</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>------</li>
-      <li>------</li>
-    </ul>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>🍴 Gourmet Discoveries</h3>
+      <p>A food and recipe exploration project showcasing delicious culinary journeys.</p>
+      <a href="https://gourmet-discoveries.vercel.app/?fbclid=IwY2xjawNIrg5leHRuA2FlbQIxMABicmlkETF1VGtRR2VhQWhFYXQ0VlZGAR41beq9ZJNZJ8shyjBUqeNtN3rqaNuaPLX8H8_v75E22gFw0l7YGjCwPVPpvg_aem_2ol9oLcSDhogz5JTMiXj-w" target="_blank" class="btn">View Project</a>
+    </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s connect! You can find me here:</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1C3m3RVa9J/" target="_blank">🌸 Facebook</a>
+      <a href="https://www.instagram.com/cthrnrms_?igsh=ZHRpNmdraGRjenc2" target="_blank">🌷 Instagram</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p><a href="../index.html">⬅ Back to Home</a></p>
+    <p>© 2025 Catherine | Bloom with Creativity 🌷</p>
   </footer>
 </body>
 </html>
