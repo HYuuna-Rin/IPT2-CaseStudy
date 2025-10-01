@@ -1,0 +1,266 @@
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #f9f9fb, #eef2f7);
+  color: #333;
+  padding-bottom: 50px;
+}
+
+
+header {
+  background:rgb(89, 69, 197) ;
+  color: #fff;
+  padding: 30px 15px;
+  text-align: center;
+  border-bottom: 4px solid rgb(89, 69, 197); 
+}
+
+header h1, header h2 {
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+}
+ 
+nav {
+  background: #fefefe;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:rgb(89, 69, 197) ;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(89, 69, 197);
+}
+
+ 
+section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+section h2 {
+  color:rgb(89, 69, 197) ;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(89, 69, 197);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+ 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skills li {
+  background:rgb(89, 69, 197) ;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+ 
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.job em {
+  color: #777;
+}
+
+ 
+footer {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+footer a {
+  color:rgb(89, 69, 197) ;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+ 
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: rgb(89, 69, 197);
+  color: #fff;
+  padding: 30px 20px;
+  border-bottom: 4px solid rgb(89, 69, 197);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.profile-info h1 {
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  font-size: 1.1em;
+}
+
+ 
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 1200px;
+
+  background: linear-gradient(135deg, #f0f7ff, #ffffff);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.team::before,
+.team::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.team::before {
+  width: 300px;
+  height: 300px;
+  background: rgba(75, 0, 130, 0.08);
+  top: -100px;
+  left: -120px;
+}
+
+.team::after {
+  width: 250px;
+  height: 250px;
+  background: rgba(75, 0, 130, 0.06);
+  bottom: -100px;
+  right: -100px;
+}
+
+ 
+.member-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 220px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid rgb(89, 69, 197);
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.member-card h2 {
+  font-size: 1.1em;
+  margin: 10px 0 5px;
+  color:rgb(89, 69, 197) ;
+}
+
+.member-card p {
+  font-size: 0.95em;
+  color: #555;
+  margin: 0;
+}
+
+.member-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+ 
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+body {
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/027/204/267/small_2x/of-beautiful-jacob-s-ladder-flower-isolated-on-white-background-generative-ai-photo.jpg") 
+              no-repeat center center fixed;
+  background-size: cover; 
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.8); /* white with 80% opacity */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
