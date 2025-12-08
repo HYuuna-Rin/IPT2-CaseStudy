@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edralyn Gardanozo Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="purple.css">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+<!-- Navigation -->
+<nav class="fixed w-full bg-white shadow-sm z-50">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-purple-600">Edralyn T. Gardanozo</h1>
+      <div class="hidden md:flex space-x-8" id="nav-links">
+        <a href="#about" class="nav-link hover:text-purple-600 transition-colors">About</a>
+        <a href="#projects" class="nav-link hover:text-purple-600 transition-colors">Projects</a>
+        <a href="#contact" class="nav-link hover:text-purple-600 transition-colors">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-gray-600">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section class="section flex items-center justify-center bg-cover bg-center relative"
+  style="background-image: url('images/homebg.jpg');">
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  <div class="text-center relative z-10 px-4">
+    <h2 class="text-5xl md:text-7xl font-bold mb-4 text-white">Hello, I'm Edralyn T. Gardanozo</h2>
+    <p class="text-xl font-semibold mb-8 text-gray-200">
+      A BSIT Major in Web and Mobile Application Student & Aspiring Developer
+    </p>
+    <button onclick="scrollToSection('projects')" class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-pink-700 transition-colors">
+      View My Work
+    </button>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section bg-black">
+  <div class="container mx-auto px-6">
+
+<div class="flex justify-center py-4">
+  <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">
+    <h4 class="text-2xl font-semibold text-purple-600 mb-3">Daily Advice</h4>
+
+    <p id="adviceText" class="text-gray-700 italic mb-4">
+      Loading advice...
+    </p>
+
+    <button 
+      id="newAdviceBtn" 
+      class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">
+      Get New Advice
+    </button>
+  </div>
+</div>
+
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-400">About Me</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="images/wonie.jpg"
+          alt="Portrait of Edralyn Gardanozo smiling" class="rounded-lg shadow-lg w-full">
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold mb-4 text-gray-400">Edralyn T. Gardanozo</h3>
+        <p class="text-gray-400 mb-6 leading-relaxed">
+          I'm a passionate 4th-year Information Technology student with a strong interest in web development, machine learning, 
+          and creating meaningful digital experiences. Currently pursuing my degree while building projects that challenge my skills and expand my knowledge.<br>
+          <br>
+          When I’m not studying/coding, you’ll usually find me sleeping, watching anime or k/c-drama, reading, or looking for inspiration in everyday life. 
+          This portfolio is a collection of what I’ve learned so far and the skills I continue to develop,
+          and I’m excited to share that journey with you!
+        </p>
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          <div>
+            <h4 class="font-semibold text-gray-500 mb-2">Skills</h4>
+            <ul class="text-gray-500 space-y-1">
+              <li>• HTML/CSS/JavaScript/PHP</li>
+              <li>• GitBash/GitHub</li>
+              <li>• Microsoft Office (Word, Excel, 
+                <br>PowerPoint & Access)</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-500 mb-2">Education</h4>
+            <p class="text-gray-500">
+              B.S. Information Technology 
+              <br>Major in Web and Mobile Application <br>
+              Tarlac State University <br>
+              2022 - 2026
+            </p>
+          </div>
+        </div>
+        <button onclick="scrollToSection('contact')" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition-colors">
+          Let's Connect
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section bg-black">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-400">My Projects & Certificates</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="images/project1.jpg"
+          alt="Dashboard interface project" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800">Gourmet Discoveries</h3>
+          <p class="text-gray-800 mb-4">A food blog website showcasing authentic filipino recipes along with their history</p>
+          <div class="flex space-x-2">
+            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">Project 1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate Holder -->
+      <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+        <a href="certificates.html">
+          <img src="images/UP.jpg"
+            alt="Certificate Preview" class="w-full h-48 object-contain bg-gray-100 hover:opacity-90 transition">
+        </a>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-800">My Certificates and Achievements</h3>
+          <p class="text-gray-800 mb-4">Click to view all certificates showcasing my achievements.</p>
+          <div class="flex space-x-2">
+            <span class="bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded">Certificates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section bg-black py-16">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-400">Get In Touch</h2>
+
+    <div class="max-w-2xl mx-auto">
+      <!-- Working Contact Form (Formspree) -->
+      <form action="https://formspree.io/f/mdkqlerw" method="POST" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+            <input 
+              type="text" 
+              name="name" 
+              required
+              class="w-full px-4 py-3 border border-gray-700 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" 
+              placeholder="Your name">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+            <input 
+              type="email" 
+              name="email" 
+              required
+              class="w-full px-4 py-3 border border-gray-700 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" 
+              placeholder="your.email@example.com">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+          <textarea 
+            name="message" 
+            rows="5" 
+            required
+            class="w-full px-4 py-3 border border-gray-700 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" 
+            placeholder="Your message..."></textarea>
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-pink-700 transition-colors font-semibold">
+          Send Message
+        </button>
+      </form>
+
+      <!-- Social Section -->
+      <div class="mt-12 text-center">
+        <h3 class="text-xl font-semibold mb-6 text-gray-300">Or reach me directly</h3>
+        <div class="flex justify-center space-x-8">
+
+          <a href="https://ph.linkedin.com/in/edralyn-gardanozo-ab2084386" class="text-gray-400 hover:text-purple-500 transition-colors">
+            <i class="fab fa-linkedin text-2xl"></i>
+          </a>
+
+          <a href="https://github.com/Swttulip" class="text-gray-400 hover:text-purple-500 transition-colors">
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+
+          <a href="https://www.facebook.com/edralyntuazon.gardanozo/" class="text-gray-400 hover:text-purple-500 transition-colors">
+            <i class="fab fa-facebook text-2xl"></i>
+          </a>
+
+          <a href="mailto:edralyngardanozo999@gmail.com" class="text-gray-400 hover:text-purple-500 transition-colors">
+            <i class="fas fa-envelope text-2xl"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Back to Team Page Button -->
+<div class="bg-black-300 text-center py-8">
+  <a href="index.html" 
+     class="bg-purple-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-purple-800 transition">
+     ⬅ Back to Team Page
+  </a>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-6 text-center">
+    <p>&copy; 2025 Edralyn Gardanozo. All rights reserved.</p>
+    <p class="text-gray-400 mt-2">Built with passion and lots of coffee</p>
+  </div>
+</footer>
+
+<script src="edscript.js"></script>
+<script>
+  function loadAdvice() {
+    fetch("https://api.adviceslip.com/advice")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("adviceText").textContent = data.slip.advice;
+      })
+      .catch(err => {
+        document.getElementById("adviceText").textContent = 
+          "Unable to load advice right now.";
+      });
+  }
+
+  // Load advice on start
+  loadAdvice();
+
+  // Reload advice when button is clicked
+  document.getElementById("newAdviceBtn").addEventListener("click", loadAdvice);
+</script>
+
+</body>
+</html>
