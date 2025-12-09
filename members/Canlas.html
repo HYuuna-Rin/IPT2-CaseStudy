@@ -69,23 +69,22 @@
     }
 
     footer {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  background: none;
-  padding: 0;
-  margin: 0;
-}
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background: none;
+      padding: 0;
+      margin: 0;
+    }
 
-footer a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 6px 10px;
-  border-radius: 5px;
-}
-
+    footer a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 6px 10px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
@@ -162,10 +161,30 @@ footer a {
       </ul>
     </section>
 
-    <footer>
-  <p><a href="../index.html">⬅️ Back to Home</a></p>
-</footer>
-</div>
-</body>
-</html>
+    <section>
+      <h2>Random Quote (API)</h2>
+      <p id="quote">Loading quote...</p>
+      <p id="author" style="font-style: italic; font-weight: bold;"></p>
+    </section>
 
+    <footer>
+      <p><a href="../index.html">⬅️ Back to Home</a></p>
+    </footer>
+  </div>
+
+<script>
+  async function loadJoke() {
+    try {
+      const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+      const data = await response.json();
+
+      document.getElementById("quote").textContent = data.setup;
+      document.getElementById("author").textContent = data.punchline;
+    } 
+    catch (error) {
+      document.getElementById("quote").textContent = "Failed to load joke 😢";
+    }
+  }
+
+  loadJoke();
+</script>
