@@ -1,4 +1,3 @@
-// QRServer: generate QR image for the GitHub profile
 (function loadQR(){
   var img = document.getElementById('github-qr');
   if (img) {
@@ -6,7 +5,6 @@
   }
 })();
 
-// GitHub API: fetch latest 5 updated public repositories
 async function loadRepos() {
   try {
     const res = await fetch('https://api.github.com/users/HYuuna-Rin/repos?sort=updated&per_page=5');
