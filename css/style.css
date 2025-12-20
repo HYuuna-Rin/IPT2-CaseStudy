@@ -54,6 +54,9 @@ nav ul li a:hover {
   color: rgb(89, 69, 197);
 }
 
+ul li{
+list-style-type: none;
+}
  
 section {
   margin: 20px auto;
@@ -259,8 +262,70 @@ body {
   background-size: cover; 
 }
 .card {
-  background-color: rgba(255, 255, 255, 0.8); /* white with 80% opacity */
+  background-color: rgba(255, 255, 255, 0.8); 
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+ .title {
+  position: relative;
+  margin: 20px auto;         
+  font-size: 30px;
+  color: #4a4a8a;
+  font-weight: bold;
+  background-color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  width: fit-content;        
+}
+
+.viewer-container {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.painting-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  transition: opacity 0.4s ease;
+}
+
+.painting-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #4a4a8a;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #36366b;
+}
+
+.controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.fade.show {
+  opacity: 1;
 }
