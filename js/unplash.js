@@ -30,9 +30,5 @@ function loadUnsplashHero() {
 
   // Initial load
   loadUnsplashHero();
-
-  // Button click to refresh image
-  if (button) {
-    button.addEventListener("click", loadUnsplashHero);
-  }
 });
+
